@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.blockingHD.test.client.handler.KeyInputEventHandler;
 import com.blockingHD.test.handler.ConfigHandler;
@@ -15,6 +16,7 @@ import com.blockingHD.test.init.Recipes;
 import com.blockingHD.test.proxy.IProxy;
 import com.blockingHD.test.reference.Reference;
 import com.blockingHD.test.utility.logHelper;
+import com.blockingHD.test.world.gen.WorldGeneratorLamp;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class test {
@@ -32,6 +34,9 @@ public class test {
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
 
 		proxy.registerKeyBindings();
+
+		// world generators registration
+		GameRegistry.registerWorldGenerator(new WorldGeneratorLamp(), 0);
 
 		logHelper.info("PreInit Complete!");
 
