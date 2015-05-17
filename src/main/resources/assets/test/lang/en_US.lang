@@ -8,6 +8,7 @@ item.test:DryStick.name=Dry Stick
 
 #Blocks
 tile.test:WoodLamp.name=Wood Lamp
+tile.test:Nickel_ore.name=Nickel ore
 
 #Creative Tabs
 itemGroup.test=Test
