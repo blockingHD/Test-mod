@@ -1,0 +1,23 @@
+[
+    {
+        "modid": "test",
+        "name": "test",
+        "description": "testing modding for further dev",
+        "version": "1.8-1.0",
+        "credits": "Created by blockingHD",
+        "logoFile": "",
+        "mcversion": "1.8",
+        "url": "",
+        "updateUrl": "",
+        "authors": [
+            "blockingHD"
+        ],
+        "parent": "",
+        "screenshots": [
+            
+        ],
+        "dependencies": [
+            
+        ]
+    }
+]

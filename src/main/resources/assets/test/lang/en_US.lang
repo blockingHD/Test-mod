@@ -1,0 +1,13 @@
+#Keys
+keys.test.category=test
+keys.test.charge=Charge
+keys.test.release=Release
+
+#Items
+item.test:DryStick.name=Dry Stick
+
+#Blocks
+tile.test:WoodLamp.name=Wood Lamp
+
+#Creative Tabs
+itemGroup.test=Test
